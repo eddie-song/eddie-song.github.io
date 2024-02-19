@@ -1,0 +1,205 @@
+body {
+    font-family: Raleway;
+    background-color: linen;
+    color: #0A0A0A;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+#navbar {
+    width: 100vw;
+    height: 65px;
+    background-color: rgb(235, 222, 209);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar #links {
+    margin-right: 50px;
+}
+
+#navbar div a {
+    color: #0A0A0A;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#navbar div a:last-of-type {
+    margin-right: 0;
+}
+
+.initials {
+    margin: 0;
+    margin-left: 50px;
+}
+
+.welcome {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    margin-top: -10px;
+    font-size: 50px;
+    animation: glow 10s infinite linear;
+}
+
+#thanks {
+    width: 500px;
+    text-align: center;
+}
+
+.social-icons a {
+    padding: 3px 5px;
+    background-color: linen;
+    color: #0A0A0A;
+    border-radius: 15%;
+}
+
+.social-icons a:hover {
+    font-size: 15px;
+    background-color: #0A0A0A;
+    color: linen;
+    border-radius: 20%;
+}
+
+.resume {
+    width: 700px;
+    height: 1000px;
+}
+
+.resume-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#coming-soon {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.snowboard {
+    font-size: 100px;
+    width: 140px;
+    margin: auto;
+    animation: snowboard 4s infinite linear;
+}
+
+#drumming {
+    width: 500px;
+}
+
+.container {
+    width: 100vw;
+    height: calc(100vh - 100px);
+}
+
+.container.bio-page {
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.container.projects p {
+    font-size: 15px;
+    width: 500px;
+}
+
+.container.projects .separator {
+    width: 80vw;
+    height: 2px;
+    background-color: black;
+}
+
+.container.projects section {
+    text-align: left;
+}
+
+#biography {
+    max-height: 45vh;
+    max-width: 50vw;
+    width: 600px;
+    height: 300px;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 222, 209);
+    border-radius: 30px;
+    font-size: 90%;
+}
+
+#portrait {
+    width: 40%;
+    height: 95%;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 98px;
+}
+
+.divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}
+
+@keyframes glow {
+    0% {
+        color: red;
+    }
+    25% {
+        color: yellow;
+    }
+    50% {
+        color: purple;
+    }
+    75% {
+        color: yellow;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes snowboard {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
