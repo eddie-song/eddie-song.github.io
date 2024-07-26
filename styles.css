@@ -3,7 +3,7 @@ body {
     background-color: linen;
     color: #0A0A0A;
     overflow-x: hidden;
-    padding-top: 200px;
+    margin: 0;
 }
 
 #navbar {
@@ -14,19 +14,89 @@ body {
 }
 
 #links {
-    background-color: white;
-    width: 500px;
+    width: 200px;
     height: 50px;
+    display: flex;
+    flex-direciton: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+}
+
+.button:hover {
+    transform: scale(1.1) translateY(-1px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button p {
+    margin: 0;
+}
+
+#closeAboutButton {
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    position: relative;
+    bottom: 125px;
+    right: 20px;
+}
+
+.hidden-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hidden-content.show {
+    display: block;
+    opacity: 1;
+}
+
+#bio-content-container {
+    background: transparent;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
-#links a {
-    color: #0A0A0A;
-    text-decoration: none;
-    margin-right: 20px;
+.no-pointer {
+    pointer-events: none;
+}
+
+#resume-content-container {
+    background: transparent;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-content img {
+    height: 80vh;
+}
+
+#closeResumeButton {
+    position: relative;
+    top: 20px;
+    left: -20px;
 }
 
 .welcome {
@@ -35,10 +105,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
 }
 
 #name {
     margin-top: -10px;
+    margin-bottom: 10px;
     font-size: 75px;
     animation: glow 10s infinite linear;
 }
@@ -62,73 +134,21 @@ body {
     border-radius: 20%;
 }
 
-.resume {
-    width: 700px;
-    height: 1000px;
-}
-
-.resume-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#coming-soon {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-}
-
-.snowboard {
-    font-size: 100px;
-    width: 140px;
-    margin: auto;
-    animation: snowboard 4s infinite linear;
-}
-
-#drumming {
-    width: 500px;
-}
-
 .container {
     width: 100vw;
     height: calc(100vh - 100px);
 }
 
 .container.bio-page {
-    width: 100vw;
-    height: calc(100vh - 100px);
+    width: 700px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.container.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-}
-
-.container.projects p {
-    font-size: 15px;
-    width: 500px;
-}
-
-.container.projects .separator {
-    width: 80vw;
-    height: 2px;
-    background-color: black;
-}
-
-.container.projects section {
-    text-align: left;
-}
-
 #biography {
-    max-height: 45vh;
-    max-width: 50vw;
     width: 600px;
     height: 300px;
     padding: 2px 10px;
@@ -182,17 +202,5 @@ body {
     }
     100% {
         color: red;
-    }
-}
-
-@keyframes snowboard {
-    0% {
-        transform: rotate(-10deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-    100% {
-        transform: rotate(-10deg);
     }
 }
