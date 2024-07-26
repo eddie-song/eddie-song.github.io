@@ -3,7 +3,7 @@ body {
     background-color: linen;
     color: #0A0A0A;
     overflow-x: hidden;
-    margin: 0;
+    padding-top: 200px;
 }
 
 #navbar {
@@ -11,16 +11,16 @@ body {
     height: 65px;
     background-color: rgb(235, 222, 209);
     position: fixed;
-    margin-bottom: 200px;
 }
 
 #links {
     background-color: white;
     width: 500px;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 #links a {
