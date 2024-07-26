@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: sticky;
+    position: absolute;
 }
 
 #navbar #links {
@@ -172,12 +172,8 @@ body {
 }
 
 .divider-bottom .shape-fill {
-    fill: #FFFFFF;
-}
-
-#wave {
-    position: sticky;
-    color: rgb(235, 222, 209);
+    position: absolute;
+    fill: rgb(235, 222, 209);
 }
 
 @keyframes glow {
