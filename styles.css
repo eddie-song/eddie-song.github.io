@@ -10,11 +10,8 @@ body {
     width: 100vw;
     height: 65px;
     background-color: rgb(235, 222, 209);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     position: fixed;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 #links {
@@ -25,10 +22,6 @@ body {
     color: #0A0A0A;
     text-decoration: none;
     margin-right: 20px;
-}
-
-#navbar div a:last-of-type {
-    margin-right: 0;
 }
 
 .welcome {
