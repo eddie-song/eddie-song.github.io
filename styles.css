@@ -13,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
 }
 
 #navbar #links {
@@ -172,7 +172,7 @@ body {
 }
 
 .divider-bottom .shape-fill {
-    position: absolute;
+    position: fixed;
     fill: rgb(235, 222, 209);
 }
 
