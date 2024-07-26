@@ -30,11 +30,6 @@ body {
     margin-right: 0;
 }
 
-.initials {
-    margin: 0;
-    margin-left: 50px;
-}
-
 .welcome {
     height: 60vh;
     display: flex;
@@ -45,7 +40,7 @@ body {
 
 #name {
     margin-top: -10px;
-    font-size: 50px;
+    font-size: 100px;
     animation: glow 10s infinite linear;
 }
 
